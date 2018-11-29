@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Portfolio Items &#8211; colxi</title>
+	<atom:link href="/portfolio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Diseño, desarrollo, producción web.</description>
+	<lastBuildDate>Thu, 10 Dec 2015 07:28:35 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.7</generator>
+	<item>
+		<title>Lintemax Logo &#038; Web (Design + Production)</title>
+		<link>/portfolio/lintemax-logo-web-design-production/</link>
+		<pubDate>Mon, 25 Nov 2013 05:29:51 +0000</pubDate>
+		<dc:creator><![CDATA[colxi]]></dc:creator>
+		
+		<guid isPermaLink="false">/?post_type=portfolio_item&#038;p=1144</guid>
+		<description><![CDATA[Logo design &#38; web design + production (website based in WordPress technology) Relative: WordPress Theme Design HTML5 Logo Design Web development Used Software: Adobe Photoshop Notepad++ &#160;]]></description>
+		</item>
+		<item>
+		<title>Illustration: Radatilly tale, character design</title>
+		<link>/portfolio/illustration-radatilly-tale-character-design/</link>
+		<pubDate>Wed, 04 Sep 2013 05:23:03 +0000</pubDate>
+		<dc:creator><![CDATA[colxi]]></dc:creator>
+		
+		<guid isPermaLink="false">/?post_type=portfolio_item&#038;p=1116</guid>
+		<description><![CDATA[Character design for Radatilly book. Relative: Illustration Hand-drawing Used Software: Adobe Photoshop &#160; «Nothing I desire more than become altogether crazy, however I dread to think that those who will take care of me, will always be two steps up on the scale of madness&#8230;...]]></description>
+		</item>
+		<item>
+		<title>Wayfarers (knut hamsun) illustration</title>
+		<link>/portfolio/wayfarers-knut-hamsun-book-cover/</link>
+		<pubDate>Thu, 13 Jun 2013 06:42:13 +0000</pubDate>
+		<dc:creator><![CDATA[colxi]]></dc:creator>
+		
+		<guid isPermaLink="false">/?post_type=portfolio_item&#038;p=1087</guid>
+		<description><![CDATA[Illustration inspired in Wayfarers novel characters&#8217;s (Knut Hamsun, Wayfarers, 1927). Relative: Illustration Hand-drawing Used Software: Adobe Photoshop &#160; «They talked it over and over in their queer Nordland dialect, with many extraordinary words, unexpected words, it was insanity to the point of being art, and it...]]></description>
+		</item>
+		<item>
+		<title>makeSlider : Simple Javascript SlideShow Generator</title>
+		<link>/portfolio/makeslider-simple-javascript-slideshow-generator/</link>
+		<pubDate>Wed, 12 Jun 2013 01:32:47 +0000</pubDate>
+		<dc:creator><![CDATA[colxi]]></dc:creator>
+		
+		<guid isPermaLink="false">/?post_type=portfolio_item&#038;p=1054</guid>
+		<description><![CDATA[makeSlider is a simple javascript method designed to generate elemental scrolling slideshows, with minimun lines of code, using CSS3&#8217;s transition property. You just need to generate the following simple HTML structure: &#8212;- Slider Container (div with unique ID) &#8212;&#8212;&#8211; Items Container div &#8212;&#8212;&#8212;&#8212; Item1 &#8212;&#8212;&#8212;&#8212; Item2 &#8212;&#8212;&#8212;&#8212; Item3 &#8212;&#8212;&#8212;&#8212; (more...]]></description>
+		</item>
+		<item>
+		<title>geoAsteroids: Scratch mini-game</title>
+		<link>/portfolio/geoasteroids_scratch_mini_game/</link>
+		<pubDate>Sun, 28 Apr 2013 07:48:30 +0000</pubDate>
+		<dc:creator><![CDATA[colxi]]></dc:creator>
+		
+		<guid isPermaLink="false">/?post_type=portfolio_item&#038;p=975</guid>
+		<description><![CDATA[Partial reimplementation of the classic game Asteroids, using Scratch language. As in the original game, the player can move arround in the map (Arrow keys),  jumping to the oposite side of the screen when the border is reached. All the asteroids must be destroyed (Space Bar)....]]></description>
+		</item>
+	</channel>
+</rss>
