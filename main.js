@@ -72,7 +72,6 @@ function applyFilters(){
             }
         }
     }
-    console.log( Projects )
     renderProjects();
 }
 
@@ -83,7 +82,7 @@ GUI.projectClose.addEventListener('click', ()=>{
     document.body.removeAttribute('projectView');
     setTimeout( ()=>{ 
         console.log('hidding...');
-        projectContent.innerHTML = '' 
+        projectContent.innerHTML = '';
     } , 700 );
     updateGrid();
 });
