@@ -81,7 +81,10 @@ function applyFilters(){
 GUI.projectClose.addEventListener('click', ()=>{ 
     GUI.projectContainer.setAttribute('folded', true); 
     document.body.removeAttribute('projectView');
-    setTimeout( ()=>{ projectContent.innerHTML = '' } , 700 );
+    setTimeout( ()=>{ 
+        console.log('hidding...');
+        projectContent.innerHTML = '' 
+    } , 700 );
     updateGrid();
 });
 
