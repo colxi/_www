@@ -168,6 +168,10 @@ body[projectView]{
         top: 80px;
     }
 
+    #filterCategoriesList {
+        top: 160px;
+    }
+
     #projectColumns {
         grid-template-columns: 100%;
     }
