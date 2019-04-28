@@ -83,7 +83,7 @@ GUI.projectClose.addEventListener('click', ()=>{
     setTimeout( ()=>{ 
         console.log('hidding...');
         projectContent.innerHTML = '';
-    } , 700 );
+    } , 500 );
     updateGrid();
 });
 
