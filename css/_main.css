@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("./filter.css");
+@import url("./card.css");
+@import url("./sidebar.css");
+
+:root{
+    /* declaration of some CSS3 global variables */
+    --cardSize : 237;
+    
+    --primary-color-light   : #f7624e;
+    --primary-color         : #f33e25;
+    --primary-color-dark    : #bb2d1a;
+
+    --secondary-color-light : #e7e7e7;
+    --secondary-color       : #b7b7b7;
+    --secondary-color-dark  : #676767;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+.columns-3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+body{ 
+    overflow-x  : hidden;
+    overflow-y  : scroll;
+    padding     : 0px;
+    margin      : 0px;
+    background  : var(--secondary-color-dark);
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+body[projectView]{
+    overflow-y: hidden !important;
+}
+
+#globalContainer{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 100px auto;
+    position: absolute;
+    width:100%;
+}
+
+#projectClose{
+    background: #f33e25;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+#projectContainer{
+    position: fixed;
+    margin-left: 100px;
+    height: 100vh;
+    background: var(--secondary-color-light);
+    z-index: 100000;
+    left: 0px;
+    right: 0px;
+    transition: all 1s;
+    width: calc( 100vw - 100px);
+    box-sizing: content-box;
+    overflow-y: scroll;
+}
+
+#projectContainer[folded] {
+    left: 100vw;
+}
+
+#projectContainer content{    
+    display: grid;
+    margin: 80px;
+}
+
+#projectTitle{
+    font-family: Oswald;
+    font-size:32px;
+    font-weight: 100;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#projectColumns{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+#projectFirstColumn{ padding-right: 20px; }
+
+#projectSecondColumn.simple-slider{ background: transparent;}
+
+
+.secondColumnImage{
+    grid-column: 2/3;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.accent{
+    background: var(--primary-color);
+    color: white;
+    padding: 1px 5px;
+}
+
+.code{
+    background: #dad9d9;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.accent a{ color:white; }
+
+@media screen and (max-width: 800px) {
+    #projectColumns {
+        grid-template-columns: 100%;
+    }
+
+    #projectContainer content {
+        margin: 40px 80px;
+    }
+
+    #projectFirstColumn {
+        padding-right: 0px;
+    }
+
+    #projectSecondColumn{
+        margin-top: 40px;
+    }
+
+    .columns-3 {
+        grid-template-columns: 1fr;
+    }
+}

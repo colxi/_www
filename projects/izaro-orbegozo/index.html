@@ -1,0 +1,26 @@
+<h1 id="projectTitle">IZARO ORBEGOZO: WINTER CATALOGUE</h1>
+<div id="projectColumns">
+    <div id="projectFirstColumn">
+        Catalogue realization for an independent clothes designer brand from Barcelona, working over the provided set of studio photographs, as graphical material, applying a heavy image manipulation and composition.
+        <br>
+        <span class="accent">Fields</span><br>
+        <br>
+        - Graphical Design<br>
+        - Photoshop<br>
+        - Catalog Design<br>
+    </div>
+    <div id="projectSecondColumn" class="simple-slider" >
+        <img src="./projects/izaro-orbegozo/1.jpg">
+        <img src="./projects/izaro-orbegozo/2.jpg">
+        <img src="./projects/izaro-orbegozo/3.jpg">
+        <img src="./projects/izaro-orbegozo/4.jpg">
+    </div>
+    <img src="./projects/izaro-orbegozo/izaro_print.jpg" class="secondColumnImage">
+
+</div>
+
+<script type="module">
+    import {Slider} from './lib/simple-slider.js';
+    window.Slider = Slider;
+    Slider( document.getElementById('projectSecondColumn'), 3000 );
+</script>

@@ -1,0 +1,36 @@
+<h1 id="projectTitle">JSHARMONY : MUSICAL LIBRARY</h1>
+<div id="projectColumns">
+    <div id="projectFirstColumn">
+            <span class="code">JSHarmony</span> is a javascript library focused in generating musical objects and structures, like Chords, Intervals, and Scales. A set of secondary functions for input validation, is provided too.<br>
+            <br>
+            <span class="accent">Methods</span><br>
+            <br>
+            - <span class="code">makeScale(mode,name,root)</span> : Generate a new scale<br>
+            - <span class="code">randomChord(root,type)</span> : Generate a randome chord<br>
+            - <span class="code">randomNote(name, accidentals, octave)</span> : Generate a random note <br>
+            - <span class="code">makeIntervalNote(grade , quality, direction, root)</span> : Generate an internal note from the provided root <br>
+            - <span class="code">makeInterval(grade, quality, direction, root)</span> : Generate a interval from the provided root<br>
+            - <span class="code">makeChord(root, type)</span> : Generate a chord with the provided root<br>
+        <br>
+        <br>
+        This project is hosted in <span class="accent"><a href="https://github.com/colxi/js-harmony" target="_target">Github</a></span>, available for download, and with extensive documentation.
+        <br><br>
+        <span class="accent">Fields</span><br>
+        <br>
+        - Javascript<br>
+        - Musical Theory<br>
+        - Library<br>
+        - Open Source<br>
+    </div>
+    <div id="projectSecondColumn" class="simple-slider" >
+        <img src="./projects/jsharmony/js_harmony.jpg">
+    </div>
+</div>
+
+<script type="module">
+    import {Slider} from './lib/simple-slider.js';
+    console.log('done');
+    window.Slider = Slider;
+
+    Slider( document.getElementById('projectSecondColumn'), 3000 );
+</script>

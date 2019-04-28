@@ -1,0 +1,32 @@
+<h1 id="projectTitle">GEOASTEROIDS RETRO GAME</h1>
+<div id="projectColumns">
+    <div id="projectFirstColumn">
+        Game experiment implemented in Scratch and then ported to HTML5. The game is a geometrical clone of the retro game Asteroids, where the user needs to move arround avoiding obstacles, shooting against them, and handle the acceleration of the spaceship.<br>
+        <br>
+        <span class="bold">USAGE</span>: Click on the game viewport to set the focus and use <span class="accent">ARROW KEYS</span> to move and  <span class="accent">SPACE BAR</span> to shoot.<br>
+        <br>
+        <span class="accent">Fields</span><br>
+        <br>
+        - GameDev<br>
+        - HTML5<br>
+        - Scratch<br>
+        - Multimedia<br>
+    </div>
+    <div id="projectSecondColumn" >
+        <iframe id="game" src="./projects/geoasteroids/game.html" style="border: none;width: 100%; height: 400px; background: #dedede;"></iframe>
+    </div>
+</div>
+
+<script>
+    // set the focus    
+    var game = document.getElementById('game');
+    game.contentWindow.focus();
+    
+    game.addEventListener('click', ()=>{
+        game.contentWindow.focus() ;
+    });
+
+    game.contentWindow.addEventListener('click', ()=>{
+        game.contentWindow.focus() ;
+    });
+</script>
