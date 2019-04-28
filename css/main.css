@@ -132,6 +132,33 @@ body[projectView]{
 .accent a{ color:white; }
 
 @media screen and (max-width: 800px) {
+
+
+    #globalContainer{
+        grid-template-columns: none;
+        grid-template-rows: 60px 1fr;
+    }
+
+    #sidebarFixedContainer{
+        width: 100%;
+        height: 60px;
+        padding-top: 0px;
+    }
+
+    #sidebarLogo{
+        padding: 10px;
+        bottom: inherit;
+        top: 0px;
+    }
+
+    #sidebarLinks{
+        padding: 10px;
+        bottom: inherit;
+        top: 0px;
+    }
+    
+
+
     #projectColumns {
         grid-template-columns: 100%;
     }
