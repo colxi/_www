@@ -124,7 +124,7 @@ function renderProjects(){
         // handle card click
         card.addEventListener('click',async ()=>{
             card.blur();
-            
+
             GUI.projectContainer.removeAttribute('folded');
             document.body.setAttribute('projectView', true);
 
@@ -153,7 +153,10 @@ function renderProjects(){
         //card.style.backgroundImage = `url(./img/${Projects[i].thumbail})`;
         GUI.cardsContainer.appendChild(card);
     }
-    updateGrid()
+    updateGrid();
+
+    setTimeout( ()=>updateGrid() , 1000);
+    
 }
 
 
