@@ -123,6 +123,8 @@ function renderProjects(){
         let card = document.createElement('div');
         // handle card click
         card.addEventListener('click',async ()=>{
+            card.blur();
+            
             GUI.projectContainer.removeAttribute('folded');
             document.body.setAttribute('projectView', true);
 
