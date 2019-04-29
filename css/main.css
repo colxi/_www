@@ -131,6 +131,11 @@ body[projectView]{
 
 .accent a{ color:white; }
 
+#sidebarLinks>span{
+    margin-top:5px;
+    display: inline-block;
+}
+
 @media screen and (max-width: 800px) {
 
 
@@ -143,19 +148,30 @@ body[projectView]{
         width: 100%;
         height: 60px;
         padding-top: 0px;
-        z-index: 1;
+        z-index: 9999;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     #sidebarLogo{
         padding: 14px;
         bottom: inherit;
         top: 0px;
+        grid-column: 1/2;
+        left: 0px;
+        position: absolute;
     }
 
     #sidebarLinks{
         padding: 10px;
         bottom: inherit;
         top: 0px;
+        grid-column: 2/3;
+        position: absolute;
+        right: 0px;
+    }
+    #sidebarLinks>span{
+        margin:5px;
     }
     
     #projectContainer{
