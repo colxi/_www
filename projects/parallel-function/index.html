@@ -1,25 +1,21 @@
-<h1 id="projectTitle">LINTEMAX : LOGO + WEBSITE</h1>
+<h1 id="projectTitle">PARALLEL FUNCTION : JS PARALLELIZATION</h1>
 <div id="projectColumns">
     <div id="projectFirstColumn">
-        Logo design + Wordpress Template design & development for this Construction company. The resulting Wordpress Template, was made from scratch and is totally responsive.<br>
+        This open source library lets you create a new thread (Web Worker) with a function, and keep it alive and ready to be called as many times as you need, <span class="accent">asynchronously</span> in the background, without blocking your main thread event loop.<br>
+        With this simple solution you can move to secondary threads your heavy functions, and enjoy multithreading in a way that feels like calling a regular <span class="accent">async</span> function. <br>
         <br>
+        <span class="bold">Note :</span> A ParallelFunction, feels and behaves as a regular <span class="accent">async</span> function, being the only downside, an architectural limitation that limits the type of the function parameters and function return value, to be in the family of values which can be handled by the <span class="accent"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm" target="_blank">Structure Clone Algorithm</a></span>.
+        <br><br>
+        This project, and its source code is hosted in <span class="accent"><a href="https://github.com/colxi/parallel-function" target="_blank">Github</a></span>, where can be downloaded and complete documentation is available.
+        <br><br><br>
         <span class="accent">Fields</span><br>
         <br>
-        - WordPress Theme Design<br>
-        - HTML5<br>
-        - Logo Design<br>
-        - Web development<br>
+        - Javascript<br>
+        - Multithreading & Parallelization<br>
+        - Library<br>
+        - Open Source<br>
     </div>
     <div id="projectSecondColumn" class="simple-slider" >
-        <img src="./projects/lintemax/logos.jpg">
-        <img src="./projects/lintemax/web1.jpg">
-        <img src="./projects/lintemax/web2.jpg">
-        <img src="./projects/lintemax/web3.jpg">
+        <img src="./projects/parallel-function/parallel-function.jpg">
     </div>
 </div>
-
-<script type="module">
-    import {Slider} from './lib/simple-slider.js';
-    window.Slider = Slider;
-    Slider( document.getElementById('projectSecondColumn'), 3000 );
-</script>

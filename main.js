@@ -8,7 +8,7 @@ let maxCardSize    = Number(cssVar.cardSize);
 let Projects = _Projects;
 
 let GUI = {
-    cardsContainer       : document.getElementById("cardsContainer"),
+    cardsContainer       : document.getElementById('cardsContainer'),
     filterButton         : document.getElementById('filterButton'),
     filterCategoriesList : document.getElementById('filterCategoriesList'),
     filterCategoryDev    : document.getElementById('filterCategoryDev'),
@@ -156,12 +156,12 @@ function renderProjects(){
     updateGrid();
 
     setTimeout( ()=>updateGrid() , 1000);
-    
+
 }
 
 
 
-renderProjects()
+setTimeout( renderProjects, 500 )
 
 /*
 

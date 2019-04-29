@@ -1,5 +1,35 @@
 let Projects = [
     {
+        title       : 'Whisp',
+        URI         : 'whisp-pwa/',
+        categories  : ['dev', 'dsgn']
+    },
+    {
+        title       : 'Functyped',
+        URI         : 'functyped/',
+        categories  : ['dev', 'lib']
+    },
+    {
+        title       : 'Keypath Resolve',
+        URI         : 'keypath-resolve/',
+        categories  : ['dev', 'lib']
+    },
+    {
+        title       : 'In Gold We Trust',
+        URI         : 'in-gold-we-trust/',
+        categories  : ['draw']
+    },
+    {
+        title       : 'Rouge Pinups',
+        URI         : 'rouge-pinups/',
+        categories  : ['draw']
+    },
+    {
+        title       : 'Deep Observer',
+        URI         : 'deep-observer/',
+        categories  : ['dev', 'lib']
+    },
+    {
         title       : 'Parallel Function',
         URI         : 'parallel-function/',
         categories  : ['dev', 'lib']
@@ -88,6 +118,11 @@ let Projects = [
         title       : 'Array.sortnum',
         URI         : 'sortnum-js/',
         categories  : ['lib']
+    },
+    {
+        title       : 'Vegameter App Mockup',
+        URI         : 'vegameter-mockup/',
+        categories  : ['dsgn']
     },
     {
         title       : 'Catail font',
