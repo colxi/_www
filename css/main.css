@@ -136,7 +136,9 @@ body[projectView]{
     display: inline-block;
 }
 
+
 @media screen and (max-width: 800px) {
+    #sidebarLinks>span.linkNpm img{ margin-bottom: 5px; }
 
 
     #globalContainer{
