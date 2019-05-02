@@ -205,6 +205,7 @@ window.CSSGlobalVariables = (function(){
             // iterate all CSS files attached to document, and extract all the
             // varibles set inside the :root selector
             [].slice.call(document.styleSheets).reduce( (prev,styleSheet)=>{
+                console.log('asd',styleSheet)
                 // if filters have been provided to constructor...
                 if( __config__.filterSelector ){
                     // get all style type elements, and ignore current if not

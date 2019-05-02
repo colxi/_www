@@ -68,7 +68,7 @@
     width:100%;
     background-size: cover;
     background-position: center;
-    filter: grayscale();
+    filter: grayscale(100%);
     
 }
 

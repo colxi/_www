@@ -1,5 +1,6 @@
 import { GUI } from './gui.js';
 import { Grid } from './grid.js';
+import { Projects } from '../projects.json.js';
 
 /**
 * 
@@ -10,9 +11,19 @@ window.addEventListener( 'load' , ()=> __PAGE_TITLE__ = document.title );
 
 
 
-function getProjectTitleFromURI(){
-    
+function getProjectFromURI(uri){
+    if( uri[ uri.length-1] === '/' ) uri = uri.substr(0,uri.length-1);
+    if( uri[0] === '/') uri = uri.substr(1,uri.length);
+    for(let i=0;i<Projects.length; i++){
+        let puri = Projects[i].URI;
+        if( puri[ puri.length-1] === '/' ) puri = puri.substr(0,puri.length-1);
+        if( puri[0] === '/') puri = puri.substr(1,puri.length);
+        if(uri=== puri) return Projects[i];
+    }
+    return false;
 }
+
+window.getProjectFromURI = getProjectFromURI;
 
 
 /**
@@ -53,7 +64,9 @@ function loadUrl( url, setUrl=true ) {
     if( location[1] === 'projects' ){
         console.log('LoadUrl : Project requested' , location );
         let url =  '#!/projects/'+location[2];
-        if(setUrl) history.pushState( { url }, '**************', '#!/projects/'+location[2] );
+        let projectMeta = getProjectFromURI(location[2]);
+        let title = __PAGE_TITLE__ + ' : Project ' + projectMeta.title + ' (' + projectMeta.categories.join(',') + ')';
+        if(setUrl) history.pushState( { url }, title, '#!/projects/'+location[2] );
         else history.replaceState( { url }, undefined, url );
         loadProject( location[2] );
     }else if( location[1] === 'listing' ){
