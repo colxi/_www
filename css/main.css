@@ -129,7 +129,10 @@ body[projectView]{
     font-style: italic;
 }
 
-.accent a{ color:white; }
+.accent a{ 
+    color:white;
+    text-decoration: underline;
+}
 
 #sidebarLinks>span{
     margin-top:5px;
@@ -201,13 +204,19 @@ body[projectView]{
 
     #projectFirstColumn {
         padding-right: 0px;
+        grid-row: 2/3;
     }
 
     #projectSecondColumn{
-        margin-top: 40px;
+        margin-bottom: 40px;
+        grid-row: 1/2;
     }
 
     .columns-3 {
         grid-template-columns: 1fr;
+    }
+
+    .secondColumnImage {
+        grid-column: 1/2;
     }
 }

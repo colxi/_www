@@ -25,8 +25,8 @@
     right: 28px;
     z-index: 9999;
     overflow: hidden;
-    transition: all .5s;
-    max-height: 300px;
+    transition: all .8s ease-in;
+    max-height: 600px;
     opacity: 1;
 }
 
@@ -48,6 +48,7 @@
     cursor: pointer;
     font-family: Oswald;
     font-weight: 100;
+    text-transform: uppercase;
 }
 .filterCategory:hover{
     background: var(--primary-color)
