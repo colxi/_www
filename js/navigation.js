@@ -55,7 +55,7 @@ async function loadProject(uri){
 /**
 * 
 */
-function loadUrl( url, setUrl=true ) {
+async function loadUrl( url, setUrl=true ) {
     let location = url.split('/');
     if( location[0] !== '#!' ){
         if( location[0] === '#' || location[0] === '' ) location[0] = '#!';
@@ -66,18 +66,18 @@ function loadUrl( url, setUrl=true ) {
         let url =  '#!/projects/'+location[2];
         let projectMeta = getProjectFromURI(location[2]);
         let title = __PAGE_TITLE__ + ' : Project ' + projectMeta.title + ' (' + projectMeta.categories.join(',') + ')';
+        await loadProject( location[2] );
         if(setUrl) history.pushState( { url }, title, '#!/projects/'+location[2] );
         else history.replaceState( { url }, undefined, url );
-        loadProject( location[2] );
     }else if( location[1] === 'listing' ){
         console.log('LoadUrl : Listing section requested' , location );
         let url = '#!/listing/';
-        if(setUrl) history.pushState({ url }, __PAGE_TITLE__ , '#!/listing/' );
-        else history.replaceState( { url }, __PAGE_TITLE__, url );
         GUI.projectContainer.setAttribute('folded', true); 
         document.body.removeAttribute('projectView');
         setTimeout( ()=>{ 
             GUI.projectContent.innerHTML = '';
+            if(setUrl) history.pushState({ url }, __PAGE_TITLE__ , '#!/listing/' );
+            else history.replaceState( { url }, __PAGE_TITLE__, url );
         } , 500 );
         Grid.updateSize();
     }else{
