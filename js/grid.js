@@ -1,6 +1,5 @@
 import { GUI } from './gui.js';
 import {CSSGlobalVariables} from './lib/css-global-variables.js';
-import { Navigation } from './navigation.js';
 
 
 let cssVar               = new CSSGlobalVariables();
@@ -48,7 +47,7 @@ let Grid = {
     
             card.className = 'card';
             card.innerHTML = `
-                <div class="cardImg" style="background-image:url(./projects/${Projects[i].URI}/thumbail.jpg)"></div>
+                <div class="cardImg" style="background-image:url(./content/projects/${Projects[i].URI}/thumbail.jpg)"></div>
                 <div class="card-button">+</div>
                 <div class="card-title">${Projects[i].title}</div>
             `;

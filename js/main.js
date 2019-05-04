@@ -1,4 +1,4 @@
-import { Projects } from '../projects.json.js';
+import { Projects } from '../content/projects.json.js';
 import { Slider } from './lib/simple-slider.js'; 
 import { GUI } from './gui.js';
 import { Grid } from './grid.js';

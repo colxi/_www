@@ -1,5 +1,5 @@
-import { Projects } from '../projects.json.js';
-import { Categories } from '../categories.json.js';
+import { Projects } from '../content/projects.json.js';
+import { Categories } from '../content/categories.json.js';
 import { GUI } from './gui.js';
 import { Grid } from './grid.js';
 
@@ -10,7 +10,6 @@ let Filters = {
     // Initialized filters, and generate GUI Elements
     init: function(){
         for( let i=0; i<Categories.length; i++ ){
-            console.log(Categories[i])
             Filters.status[ Categories[i] ] = true;
             let categoryFilter = document.createElement('div');
             categoryFilter.className = 'filterCategory';

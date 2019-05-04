@@ -1,6 +1,6 @@
 import { GUI } from './gui.js';
 import { Grid } from './grid.js';
-import { Projects } from '../projects.json.js';
+import { Projects } from '../content/projects.json.js';
 
 /**
 * 
@@ -36,7 +36,7 @@ async function loadProject(uri){
     document.body.setAttribute('projectView', true);
 
     // fetch project description HTML
-    let html = await (await fetch(`./projects/${uri}/index.html`) ).text();
+    let html = await (await fetch(`./content/projects/${uri}/index.html`) ).text();
     // insert HTML
     GUI.projectContent.innerHTML= html;
     // make script elements to execute (they are not executed when 
