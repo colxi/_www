@@ -94,7 +94,7 @@ window.addEventListener( 'popstate' , event=>{
     // if state is found (browser next or previous button pressed) load it without saving history change
     if( event.state ) loadUrl( event.state.url , false);
     // if no state is found (manual modification of the url), load url and save history change
-    else loadUrl( window.location.hash , true);
+    else loadUrl( window.location.hash , false);
 });
 
 let Navigation = {

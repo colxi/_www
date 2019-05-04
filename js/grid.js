@@ -1,11 +1,12 @@
 import { GUI } from './gui.js';
-import './lib/css-global-variables.js';
+import {CSSGlobalVariables} from './lib/css-global-variables.js';
 import { Navigation } from './navigation.js';
 
 
 let cssVar               = new CSSGlobalVariables();
 let __MAX_CARD_SIZE__    = Number(cssVar.cardSize);
 
+window.cssVar = cssVar;
 
 let Grid = {
     /**
@@ -40,9 +41,10 @@ let Grid = {
         GUI.cardsContainer.innerHTML = '';
         // render all the cards
         for(let i=0;i<Projects.length;i++){
-            let card = document.createElement('div');
+            let card = document.createElement('a');
+            card.href='#!/projects/' + Projects[i].URI;
             // handle card click
-            card.addEventListener( 'click', async ()=>Navigation.loadUrl('#!/projects/' + Projects[i].URI) );
+            //card.addEventListener( 'click', async ()=>Navigation.loadUrl('#!/projects/' + Projects[i].URI) );
     
             card.className = 'card';
             card.innerHTML = `
