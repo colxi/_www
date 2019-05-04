@@ -6,6 +6,22 @@ import { Navigation } from './navigation.js';
 import { Filters } from './filters.js';
 
 
+
+async function loadTemplate(){
+    let head = await ( await fetch('./content/theme/html/head.html') ).text();
+    document.head.innerHTML += head;
+
+    let sidebarTop = await ( await fetch('./content/theme/html/sidebar-top.html') ).text();
+    document.getElementById('sidebarTop').innerHTML = sidebarTop;
+
+    let sidebarBottom = await ( await fetch('./content/theme/html/sidebar-bottom.html') ).text();
+    document.getElementById('sidebarBottom').innerHTML = sidebarBottom;
+
+}
+loadTemplate();
+
+
+
 // set global variable, to make it available to Project individual files
 window.Slider = Slider;
 

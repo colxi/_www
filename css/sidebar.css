@@ -10,7 +10,12 @@
     background: var(--primary-color);
 }
 
-#sidebarLinks{    
+#sidebarBottom{    
     position: absolute;
     bottom: 20px;
+}
+
+#sidebarBottom>span{
+    margin-top:5px;
+    display: inline-block;
 }
